@@ -275,15 +275,16 @@ Las estructuras de control condicional permiten ejecutar bloques de código espe
 
 <!-- CORROBORAR -->
 
-Los modificadores de acceso controlan la visibilidad de clases, atributos y métodos:
+Los modificadores de acceso controlan la visibilidad atributos y métodos:
 
 | Modificador | Visibilidad                                                                       |
 | ----------- | --------------------------------------------------------------------------------- |
 | `public`    | Accesible desde cualquier clase de cualquier paquete                              |
 | `private`   | Accesible solo dentro de la misma clase                                           |
-| `protected` | Accesible en el mismo paquete y en subclases (incluso si están en otros paquetes) |
+| `protected` | Accesible en el mismo paquete y en subclases(herencia) (incluso si están en otros paquetes) |
 | (default)   | Accesible solo dentro del mismo paquete (si no se especifica ningún modificador)  |
 
+NOTA: Las clases solo pueden ser public o default
 ---
 
 ### 4.8. Entrada y Salida estándar
@@ -343,34 +344,34 @@ Los modificadores de acceso controlan la visibilidad de clases, atributos y mét
   ```
   - System.in: indica que la entrada será desde el teclado.
   - sc: es el nombre del objeto que usaremos para leer los datos.
-<!-- REVISAR -->
-  #### Métodos comunes
-  | Método         | Función                           |
-  | -------------- | --------------------------------- |
-  | `next()`       | lee una palabra (sin espacios)        |  
-  | `nextLine()`   | lee una línea completa (con espacios) |  
-  | `nextInt()`    | lee un número entero          |
-  | `nextDouble()` | lee un número decimal     |
+    <!-- REVISAR -->
+    #### Métodos comunes
+    | Método         | Función                           |
+    | -------------- | --------------------------------- |
+    | `next()`       | lee una palabra (sin espacios)        |  
+    | `nextLine()`   | lee una línea completa (con espacios) |  
+    | `nextInt()`    | lee un número entero          |
+    | `nextDouble()` | lee un número decimal     |
 
-  #### Error común al usar Scanner
-  ```java
-  //Cuando usas next(), nextInt() y nextDouble(). NO se consume el salto de línea (\n) al presionar Enter. Eso puede causar que un nextLine() posterior lea una cadena vacía.
+    #### Error común al usar Scanner
+    ```java
+    //Cuando usas next(), nextInt() y nextDouble(). NO se consume el salto de línea (\n) al presionar Enter. Eso puede causar que un nextLine() posterior lea una cadena vacía.
 
-  // Código con error
-  System.out.print("Edad: ");
-  int edad = sc.nextInt();      // <- Lee el número, pero deja el \n
+    // Código con error
+    System.out.print("Edad: ");
+    int edad = sc.nextInt();      // <- Lee el número, pero deja el \n
 
-  System.out.print("Nombre completo: ");
-  String nombre = sc.nextLine();  // <- Lee el \n pendiente, -> resultado: cadena vacía
+    System.out.print("Nombre completo: ");
+    String nombre = sc.nextLine();  // <- Lee el \n pendiente, -> resultado: cadena vacía
 
-  // Solución
-  System.out.print("Edad: ");
-  int edad = sc.nextInt();
-  sc.nextLine(); // <- Limpia el buffer
+    // Solución
+    System.out.print("Edad: ");
+    int edad = sc.nextInt();
+    sc.nextLine(); // <- Limpia el buffer
 
-  System.out.print("Nombre completo: ");
-  String nombre = sc.nextLine(); // <- Lee correctamente la línea completa
-  ```
+    System.out.print("Nombre completo: ");
+    String nombre = sc.nextLine(); // <- Lee correctamente la línea completa
+    ```
 
 ---
 
@@ -666,6 +667,7 @@ for (String pais : paises) {
 int mayor = Math.max(10, 20);      // 20
 double raiz = Math.sqrt(16);       // 4.0
 double aleatorio = Math.random();  // Entre 0.0 y 1.0
+Math.pow(radio, 2);
 ```
 
 ---
