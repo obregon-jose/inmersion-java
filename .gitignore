@@ -5,5 +5,6 @@ EJERCICIOS.md
 src/main/java/ejercicios/*
 
 !src/main/java/ejercicios/ba*
+!src/main/java/ejercicios/con*
 
 src/main/java/utils/*
