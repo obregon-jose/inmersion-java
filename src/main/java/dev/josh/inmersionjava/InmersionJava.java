@@ -1,6 +1,7 @@
 package dev.josh.inmersionjava;
 
 import ejercicios.basicos.Basicos;
+import ejercicios.bucles.Bucles;
 import ejercicios.condicionales.Condicionales;
 
 public class InmersionJava {
@@ -9,7 +10,8 @@ public class InmersionJava {
 		System.out.println("\t\t\tInmersión JAVA\nEjecutando todos los ejercicios...\n");
 
 		// Basicos.ejecutar();
-		Condicionales.ejecutar();
+		// Condicionales.ejecutar();
+		Bucles.ejecutar();
 
 		
 	}

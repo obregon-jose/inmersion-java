@@ -667,7 +667,10 @@ for (String pais : paises) {
 int mayor = Math.max(10, 20);      // 20
 double raiz = Math.sqrt(16);       // 4.0
 double aleatorio = Math.random();  // Entre 0.0 y 1.0
-Math.pow(radio, 2);
+Math.pow(2, 2); // 4
+int aleatorio = (int) (Math.random() * (max - min + 1)) + min; //aleatrorio entre min y max
+int numeroSecreto = (int) (Math.random() * max) + 1; // aleatorio entre 1 y max
+
 ```
 
 ---
