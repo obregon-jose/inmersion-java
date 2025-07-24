@@ -281,8 +281,8 @@ Los modificadores de acceso controlan la visibilidad atributos y métodos:
 | ----------- | --------------------------------------------------------------------------------- |
 | `public`    | Accesible desde cualquier clase de cualquier paquete                              |
 | `private`   | Accesible solo dentro de la misma clase                                           |
-| `protected` | Accesible en el mismo paquete y en subclases(herencia) (incluso si están en otros paquetes) |
-| (default)   | Accesible solo dentro del mismo paquete (si no se especifica ningún modificador)  |
+| `protected` | Accesible en el mismo paquete y en subclases(herencia - otro paquete) |
+| (default)   | Accesible solo dentro del mismo paquete (package-private) (si no se especifica ningún modificador)  |
 
 NOTA: Las clases solo pueden ser public o default
 ---
@@ -713,7 +713,7 @@ System.out.println(Arrays.toString(numeros)); // Imprime: [1, 2, 3]
 
 --- -->
 
-## 5. Herramientas y Entorno Java
+## 10. Herramientas y Entorno Java
 
 - **JDK (Java Development Kit):** Kit para desarrollar en Java (incluye compilador, JVM y herramientas).
 - **IDE (Entorno de Desarrollo Integrado):** Programas como IntelliJ IDEA, Eclipse, NetBeans, Visual Studio Code (con extensión Java).
@@ -721,7 +721,7 @@ System.out.println(Arrays.toString(numeros)); // Imprime: [1, 2, 3]
 
 ---
 
-### 5.1. Buenas Prácticas
+### 10.1. Buenas Prácticas
 
 - Separa el código en clases y paquetes según su función.
 - Usa nombres descriptivos para variables y métodos.
@@ -740,7 +740,7 @@ System.out.println(Arrays.toString(numeros)); // Imprime: [1, 2, 3]
 
 ---
 
-<!-- ### 8.4. Recursos para seguir aprendiendo
+<!-- ### 10.4. Recursos para seguir aprendiendo
 
 - [Documentación oficial de Java](https://docs.oracle.com/en/java/javase/21/)
 - [Java en W3Schools](https://www.w3schools.com/java/)

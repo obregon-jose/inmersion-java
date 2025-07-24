@@ -1,28 +1,38 @@
 package ejercicios.basicos;
 
 public class Basicos {
-    
-    public static void ejecutar(){
-        AreaCuadrado acc = new AreaCuadrado(5.5);
-        acc.calcular();
 
-        AreaRectangulo ar = new AreaRectangulo(5, 8);
-        ar.calcular();
+    private static void imprimirArea(String figura, double area) {
+        System.out.printf("El area del %s es: %.2f%n", figura, area);
+        // String formato = String.format("El area del %%s es: %%.%df%%n", decimales);
+        // System.out.printf(formato, figura, area);
+    }
 
-        AreaTriangulo at = new AreaTriangulo(7, 6);
-        at.calcular();
+    private static void imprimirCalculo(String operacion, double resultado) {
+        System.out.printf("%s : %.2f%n", operacion, resultado);
+    }
 
-        AreaCirculo ac = new AreaCirculo(8.5);
-        ac.calcular();
+    public static void ejecutar() {
 
-        ConvertirCelsiusAFahrenheit cf = new ConvertirCelsiusAFahrenheit(17);
-        cf.calcular();
+        System.out.println("Ejecutando ejercicios básicos...");
+        Calculadora c = new Calculadora();
+        imprimirCalculo("Suma", c.suma(5,2));
+        imprimirCalculo("Resta", c.resta(5.1, 8.3));
+        imprimirCalculo("Multiplicación", c.multiplicacion(7, 6.2));
+        imprimirCalculo("División", c.division(-8.5,1));
 
-        ConvertirFahrenheitACelsius fc = new ConvertirFahrenheitACelsius(62.6);
-        fc.calcular();
+        CalcularArea cA = new CalcularArea();
+        imprimirArea("Cuadrado", cA.cuadrado(5));
+        imprimirArea("Rectángulo", cA.rectangulo(5.1, 8.3));
+        imprimirArea("Triangulo", cA.triangulo(7, 6.2));
+        imprimirArea("Circulo", cA.circulo(-8.5));
 
-        ConvertirSegundosAHoras sh = new ConvertirSegundosAHoras(60);
-        sh.calcular();
-        
+        ConvertirGrados cG = new ConvertirGrados();
+        cG.celsiusAFahrenheit(17);
+        cG.fahrenheitACelsius(62.6);
+
+        ConvertirTiempo cT = new ConvertirTiempo();
+        cT.segundosAHoras(60);;
+
     }
 }

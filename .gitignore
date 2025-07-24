@@ -1,10 +1,10 @@
-src/main/java/p*
 target/*
-EJERCICIOS.md
 
 src/main/java/ejercicios/*
 
-!src/main/java/ejercicios/b*
+!src/main/java/ejercicios/ba*
 !src/main/java/ejercicios/con*
 
 src/main/java/utils/*
+TALLERES.md
+EJERCICIOS.md

@@ -9,11 +9,9 @@ public class InmersionJava {
 
 		System.out.println("\t\t\tInmersión JAVA\nEjecutando todos los ejercicios...\n");
 
-		// Basicos.ejecutar();
+		Basicos.ejecutar();
 		// Condicionales.ejecutar();
-		Bucles.ejecutar();
-
-		
+		// Bucles.ejecutar();		
 	}
 
 }
