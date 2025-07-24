@@ -17,6 +17,9 @@ public class Bucles {
 
         TablaMultiplicar tm = new TablaMultiplicar(7);
         tm.generar();
+
+        NumerosParesHastaN np = new NumerosParesHastaN(20);
+        np.generar();
         
     }
 }
