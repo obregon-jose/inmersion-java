@@ -27,6 +27,11 @@ public class Basicos {
         imprimirArea("Triangulo", cA.triangulo(7, 6.2));
         imprimirArea("Circulo", cA.circulo(-8.5));
 
+        ValidarNumero vn = new ValidarNumero();
+        System.out.println("Entero positivo: " + vn.enteroPositivo(1));
+        System.out.println("Par: " + vn.esPar(2));
+        System.out.println("Par: " + vn.esParBitwise(2));
+
         ConvertirGrados cG = new ConvertirGrados();
         cG.celsiusAFahrenheit(17);
         cG.fahrenheitACelsius(62.6);
