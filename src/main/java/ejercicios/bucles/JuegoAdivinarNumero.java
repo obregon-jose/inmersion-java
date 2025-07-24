@@ -31,7 +31,7 @@ public class JuegoAdivinarNumero {
 
                 if (numero == NUMERO_SECRETO) {
                     System.out.println("\n\t\tGanaste");
-                    break;
+                    return;
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Ingrese solo números enteros entre 1 y " + NUMERO_MAXIMO);

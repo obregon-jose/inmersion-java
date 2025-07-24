@@ -1,13 +1,8 @@
 package ejercicios.bucles;
 
 public class NumeroPrimo {
-    private int numero;
 
-    public NumeroPrimo(int numero) {
-        this.numero = numero;
-    }
-
-    private boolean evaluar() {
+    boolean esPrimo(int numero) {
         if (numero <= 1)
             return false;
         if (numero == 2)
@@ -21,15 +16,6 @@ public class NumeroPrimo {
             }
         }
         return true;
-    }
-
-    protected void esPrimo() {
-
-        if (evaluar()) {
-            System.out.printf("El %d es Primo%n", numero);
-        } else {
-            System.out.printf("El %d No es Primo%n", numero);
-        }
     }
 
 }

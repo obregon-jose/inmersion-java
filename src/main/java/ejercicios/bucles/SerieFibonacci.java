@@ -1,16 +1,11 @@
 package ejercicios.bucles;
 
 public class SerieFibonacci {
-    private int cantidad;
 
-    public SerieFibonacci(int serie){
-        this.cantidad = serie;
-    }
-
-    protected void serieManual(){
+    void serieManual(int serie){
         int numero1 = 0, numero2 = 1;
 
-        for(int i= 0; i < cantidad;i++ ){
+        for(int i= 0; i < serie; i++ ){
 
             System.out.print(numero1 + " ");
 
@@ -21,9 +16,9 @@ public class SerieFibonacci {
         }
     }
     
-    protected void serieRecursiva(){
+    void serieRecursiva(int serie){
 
-        for (int i = 0; i < cantidad; i++) {
+        for (int i = 0; i < serie; i++) {
             System.out.print(fibonacci(i) + " ");
         }
     }
